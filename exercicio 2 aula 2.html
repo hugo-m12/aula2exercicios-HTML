@@ -9,9 +9,28 @@
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Hugo Moreira">
   <style>
-    table, th, td {
-      border:1px solid black;
+    table{
+      border-collapse: collapse;
     }
+    th{
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 8px;
+      padding: 10px;
+      color: gray
+    }
+
+    .uppercase{
+      text-transform: uppercase;
+    }
+     .linha-cinzenta{
+      background-color: #f4f4f4;
+    }
+    td{
+      padding: 14px;
+      font-size: 9px;
+      font-weight: bold;
+     }
     </style>
 
   <link rel="stylesheet" href="./css/styles.css">
@@ -21,19 +40,27 @@
     <h2> <strong> Results </strong> </h2>
     <table style="height: 10%; text-align: center;">
         <tr>
-          <th>Pos</th>
+          <th>
+            <div style="border-bottom: 1px dotted #000">
+              Pos
+          </div>
+        </th>
           <th>No</th>
           <th>Driver</th>
           <th>Car</th>
           <th>Laps</th>
           <th>Time/Retired</th>
-          <th>PTS</th>
+          <th>
+            <div style="border-bottom: 1px dotted #000">
+              PTS
+          </div>
+        </th>
         </tr>
-        <tr>
+        <tr class="linha-cinzenta">
           <td>1</td>
           <td>4</td>
           <td>Lando Norris</td>
-          <td>Mclaren Mercedes</td>
+          <td class="uppercase">Mclaren Mercedes</td>
           <td>57</td>
           <td>1:30:49.876</td>
           <td>25</td>
@@ -42,16 +69,16 @@
             <td>2</td>
             <td>1</td>
             <td>Max Verstappen</td>
-            <td>Red Bull Racing</td>
+            <td class="uppercase">Red Bull Racing</td>
             <td>57</td>
             <td>+7.612s</td>
             <td>18</td>
         </tr>
-        <tr>
+        <tr class="linha-cinzenta">
             <td>3</td>
             <td>16</td>
             <td>Charles Leclerc</td>
-            <td>Ferrari</td>
+            <td class="uppercase">Ferrari</td>
             <td>57</td>
             <td>+9.920s</td>
             <td>15</td>
@@ -60,7 +87,7 @@
             <td>4</td>
             <td>11</td>
             <td>Sergio Perez</td>
-            <td>Red Bull Racing</td>
+            <td class="uppercase">Red Bull Racing</td>
             <td>57</td>
             <td>+14.650s</td>
             <td>12</td>
